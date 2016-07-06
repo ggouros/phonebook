@@ -1,0 +1,109 @@
+/*-----------------------------------------------
+*   Page header
+-----------------------------------------------*/
+.page-header {
+  background-color: #3E5E93;
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*-----------------------------------------------
+*   Page body
+-----------------------------------------------*/
+
+.page-body {
+    max-width: 1180px;
+  	position: relative;
+    margin: 30px auto;
+}
+
+/*-----------------------------------------------
+*   Delete
+-----------------------------------------------*/
+.delete-row {
+  display: none;
+}
+
+.delete-row.is-visible {
+  width: 10px;
+  display: table-cell;
+}
+
+.glyphicon-remove:hover {
+  transition: color 0.3s;
+  color: red;
+}
+
+/*-----------------------------------------------
+*   Insert form
+-----------------------------------------------*/
+.form {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 40px;
+  transform: translate(-50%, -5%);
+  transition: 0.4s ease-in-out;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.form.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  visibility: visible;
+}
+
+.form-title {
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.form-label {
+  width: 80px;
+}
+
+/*-----------------------------------------------
+*   Insert overlay
+-----------------------------------------------*/
+
+.form-overlay {
+  background-color: #212121;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: 0.4s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1;
+}
+
+.form-overlay.is-visible {
+  opacity: 0.4;
+  visibility: visible;
+}
+
+/*-----------------------------------------------
+*   Disable arrows from numeric input
+-----------------------------------------------*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

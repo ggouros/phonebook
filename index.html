@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Phonebook</title>
+		<link rel="stylesheet" href="resources/css/index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	</head>
+	<body class="page-body">
+    <header class='page-header'>
+      <div>
+        <p class='logo'>Phonebook</p>
+      </div>
+    </header>
+		<div>
+			<main>
+        <button type="button" class="js-insert btn btn-primary">Insert</button>
+        <button type="button" class="js-delete btn btn-danger">Delete</button>
+
+        <form class='form js-form'>
+					<h2 class="form-title"> Add new contact </h2>
+					<div class="form-group">
+	          <label class='form-label' for='form-link-input'>Name:</label>
+	          <input class='form-input form-name' type='text' required/>
+					</div>
+					<div class="form-group">
+	          <label class='form-label' for='form-link-input'>Surname:</label>
+	          <input class='form-input form-surname' type='text' required/>
+					</div>
+					<div class="form-group">
+	          <label class='form-label' for='form-link-input'>Phone:</label>
+	          <input class='form-input form-phone' type='number' required/>
+					</div>
+          <button type="submit" class="js-submit btn btn-primary">Submit</button>
+					<button type="button" class="js-cancel btn btn-danger">Cancel</button>
+        </form>
+
+				<div class='form-overlay js-form-overlay'></div>
+
+        <div>
+          <table class="table table-striped">
+			      <thead>
+			        <tr>
+			          <th class="delete-row"></th>
+			          <th>Name</th>
+			          <th>Surname</th>
+			          <th>Phone</th>
+			        </tr>
+			      </thead>
+			      <tbody class="contact-list">
+			        <tr class="contact">
+			          <td class="delete-row"><span class="glyphicon glyphicon-remove"></span></td>
+			          <td>George</td>
+			          <td>Smith</td>
+			          <td>2105346345</td>
+			        </tr>
+			        <tr class="contact">
+			          <td class="delete-row"><span class="glyphicon glyphicon-remove"></span></td>
+			          <td>John</td>
+			          <td>Doe</td>
+			          <td>2109755432</td>
+			        </tr>
+			        <tr class="contact">
+			          <td class="delete-row"><span class="glyphicon glyphicon-remove"></span></td>
+			          <td>Mary</td>
+			          <td>Summers</td>
+			          <td>2103476456</td>
+			        </tr>
+			      </tbody>
+			    </table>
+				</div>
+			</main>
+		</div>
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="resources/js/index.js"></script>
+	</body>
+</html>
